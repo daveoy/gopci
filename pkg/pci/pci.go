@@ -17,8 +17,13 @@ type ProgrammingInterface struct {
 
 var db *pciids.DB
 
+var pciFileEnv = os.Getenv("PCI_IDS_FILE")
+
 func init() {
-	filepath := "/usr/share/hwdata/pci.ids"
+	filepath := "/usr/share/misc/pci.ids"
+	if pciFileEnv != "" {
+		filepath = pciFileEnv
+	}
 	file, _ := os.Open(filepath)
 	scanner := bufio.NewScanner(file)
 	db, _ = pciids.NewDB(scanner)
