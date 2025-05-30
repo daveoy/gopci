@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hertg/gopci/pkg/pci"
+	"github.com/daveoy/gopci/pkg/pci"
 	"github.com/stretchr/testify/assert"
 )
 

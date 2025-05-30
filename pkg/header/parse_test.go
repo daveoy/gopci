@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/hertg/gopci/pkg/header"
+	"github.com/daveoy/gopci/pkg/header"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -38,34 +38,34 @@ var testDevice = map[string][]byte{
 func TestConfigParse(t *testing.T) {
 	expected := &header.StandardHeader{
 		CommonHeader: header.CommonHeader{
-			VendorID: 4098,
-			DeviceID: 29631,
-			Command: 1031,
-			Status: 2064,
-			Revision: 192,
+			VendorID:             4098,
+			DeviceID:             29631,
+			Command:              1031,
+			Status:               2064,
+			Revision:             192,
 			ProgrammingInterface: 0,
-			Subclass: 0,
-			Class: 3,
-			CacheLine: 16,
-			LatencyTimer: 0,
-			HeaderType: 128,
-			BIST: 0,
+			Subclass:             0,
+			Class:                3,
+			CacheLine:            16,
+			LatencyTimer:         0,
+			HeaderType:           128,
+			BIST:                 0,
 		},
-		BaseAddress0: 12,
-		BaseAddress1: 120,
-		BaseAddress2: 12,
-		BaseAddress3: 124,
-		BaseAddress4: 57345,
-		BaseAddress5: 4238344192,
-		CardbusCISPointer: 0,
-		SubsystemVendorID: 7854,
-		SubsystemDeviceID: 26881,
+		BaseAddress0:            12,
+		BaseAddress1:            120,
+		BaseAddress2:            12,
+		BaseAddress3:            124,
+		BaseAddress4:            57345,
+		BaseAddress5:            4238344192,
+		CardbusCISPointer:       0,
+		SubsystemVendorID:       7854,
+		SubsystemDeviceID:       26881,
 		ExpansionROMBaseAddress: 4239392768,
-		CapabilitiesPointer: 72,
-		IRQLine: 255,
-		IRQPin: 1,
-		MinGnt: 0,
-		MaxLat: 0,
+		CapabilitiesPointer:     72,
+		IRQLine:                 255,
+		IRQPin:                  1,
+		MinGnt:                  0,
+		MaxLat:                  0,
 	}
 	reader := bytes.NewReader(testDevice["config"])
 	config, _ := header.Parse(reader)

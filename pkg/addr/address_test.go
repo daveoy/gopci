@@ -3,7 +3,7 @@ package addr_test
 import (
 	"testing"
 
-	"github.com/hertg/gopci/pkg/addr"
+	"github.com/daveoy/gopci/pkg/addr"
 	"github.com/stretchr/testify/assert"
 )
 

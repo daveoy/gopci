@@ -5,8 +5,8 @@
 		<strong>A minimal and fast library to parse pci device info from sysfs.</strong>
   </p>
   <p>
-    <a href="https://goreportcard.com/report/github.com/hertg/gopci">
-      <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/hertg/gopci" />
+    <a href="https://goreportcard.com/report/github.com/daveoy/gopci">
+      <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/daveoy/gopci" />
     </a>
     <a href="#">
 			<img alt="License Information" src="https://img.shields.io/github/license/hertg/go-pciids">
@@ -28,7 +28,7 @@ this library offers a **significant performance benefit** over ghw (see [compari
 
 ### Install
 ```shell
-go get github.com/hertg/gopci
+go get github.com/daveoy/gopci
 ```
 
 ### Scan
@@ -67,13 +67,13 @@ than 10x the speed while using 50x less memory compared to
 ```text
 goos: linux
 goarch: amd64
-pkg: github.com/hertg/gopci/pkg/pci
+pkg: github.com/daveoy/gopci/pkg/pci
 cpu: AMD Ryzen 9 5950X 16-Core Processor
 BenchmarkGoPci
 BenchmarkGoPci-32            518           2554827 ns/op          297709 B/op       5178 allocs/op
 BenchmarkGhw
 BenchmarkGhw-32               34          33286659 ns/op        15745188 B/op     201189 allocs/op
 PASS
-ok      github.com/hertg/gopci/pkg/pci  2.802s
+ok      github.com/daveoy/gopci/pkg/pci  2.802s
 ```
 

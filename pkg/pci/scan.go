@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hertg/gopci/pkg/addr"
-	"github.com/hertg/gopci/pkg/header"
+	"github.com/daveoy/gopci/pkg/addr"
+	"github.com/daveoy/gopci/pkg/header"
 )
 
 var (
