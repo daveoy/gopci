@@ -1,4 +1,4 @@
-module github.com/hertg/gopci
+module github.com/daveoy/gopci
 
 go 1.18
 
