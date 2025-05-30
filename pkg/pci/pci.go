@@ -20,7 +20,7 @@ var db *pciids.DB
 var pciFileEnv = os.Getenv("PCI_IDS_FILE")
 
 func init() {
-	filepath := "/usr/share/misc/pci.ids"
+	filepath := "/usr/share/hwdata/pci.ids"
 	if pciFileEnv != "" {
 		filepath = pciFileEnv
 	}
